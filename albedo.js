@@ -371,15 +371,12 @@ ${Array.from(room.jawaban, (jawaban, index) => {
 	    }
 	    let winner = isSurrender ? room.game.currentTurn : room.game.winner
 	    let str = `Room ID: ${room.id}
-
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
-
 ${isWin ? `@${winner.split('@')[0]} Win!` : isTie ? `Game over` : `Turn ${['❌', '⭕'][1 * room.game._currentTurn]} (@${room.game.currentTurn.split('@')[0]})`}
 ❌: @${room.game.playerX.split('@')[0]}
 ⭕: @${room.game.playerO.split('@')[0]}
-
 Type *give up* to surrender and admit defeat`
 	    if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
 	    room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
@@ -407,10 +404,8 @@ Type *give up* to surrender and admit defeat`
 	    clearTimeout(roof.waktu)
 	    //delete roof[roof.id].waktu
 	    NexusNwInc.sendText(m.chat, `Suit has been sent to chat
-
 @${roof.p.split`@`[0]} and 
 @${roof.p2.split`@`[0]}
-
 Please choose a suit in the respective chat"
 click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] })
 	    if (!roof.pilih) NexusNwInc.sendText(roof.p, `Please select \n\nRock🗿\nPaper📄\nScissors✂️`, m)
@@ -455,7 +450,6 @@ click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] 
 	    else if (k.test(stage) && g.test(stage2)) win = roof.p2
 	    else if (stage == stage2) tie = true
 	    NexusNwInc.sendText(roof.asal, `_*Suit Results*_${tie ? '\nSERIES' : ''}
-
 @${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Win \n` : ` Lost \n`}
 @${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Win \n` : ` Lost \n`}
 `.trim(), m, { mentions: [roof.p, roof.p2] })
@@ -521,13 +515,10 @@ In ${clockString(new Date - user.afkTime)}
             }[v]
             })
             let str = `Room ID: ${room.id}
-
 ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
-
 Waiting @${room.game.currentTurn.split('@')[0]}
-
 Type *give up* to surrender and admit defeat`
             if (room.x !== room.o) await NexusNwInc.sendText(room.x, str, m, { mentions: parseMention(str) } )
             await NexusNwInc.sendText(room.o, str, m, { mentions: parseMention(str) } )
@@ -570,9 +561,7 @@ Type *give up* to surrender and admit defeat`
             if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0]))) throw `The person you are challenging is playing suit with someone else :(`
             let id = 'suit_' + new Date() * 1
             let caption = `_*SUIT PvP*_
-
 @${m.sender.split`@`[0]} challenging @${m.mentionedJid[0].split`@`[0]} to play suit
-
 Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             this.suit[id] = {
             chat: await NexusNwInc.sendText(m.chat, caption, m, { mentions: parseMention(caption) }),
@@ -752,7 +741,6 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `👫Your match is
-
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
             let ments = [me, jodoh]
             let buttons = [
@@ -922,23 +910,17 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
             upvote = vote[m.chat][1]
             devote = vote[m.chat][2]
             teks_vote = `*「 VOTE 」*
-
 *Reason:* ${vote[m.chat][0]}
-
 ┌〔 UPVOTE 〕
  
 ├ Total: ${vote[m.chat][1].length}
-
  
 └────
-
 ┌〔 DEVOTE 〕
  
 ├ Total: ${vote[m.chat][2].length}
-
  
 └────
-
 *${prefix}deletevote* - to delete votes`
 let buttonsVote = [
   {buttonId: `${prefix}upvote`, buttonText: {displayText: '👍🏻Up-Vote👍🏻'}, type: 1},
@@ -963,23 +945,19 @@ let buttonsVote = [
             vote[m.chat][1].push(m.sender)
             menvote = vote[m.chat][1].concat(vote[m.chat][2])
             teks_vote = `*「 VOTE 」*
-
 *Reason:* ${vote[m.chat][0]}
-
 ┌〔 UPVOTE 〕
  
 ├ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
  
 └────
-
 ┌〔 DEVOTE 〕
  
 ├ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
  
 └────
-
 *${prefix}hapusvote* - to delete votes`
             let buttonsUpvote = [
               {buttonId: `${prefix}upvote`, buttonText: {displayText: '👍🏻Up-Vote👍🏻'}, type: 1},
@@ -1005,23 +983,19 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             vote[m.chat][2].push(m.sender)
             menvote = vote[m.chat][1].concat(vote[m.chat][2])
             teks_vote = `*「 VOTE 」*
-
 *Reason:* ${vote[m.chat][0]}
-
 ┌〔 UPVOTE 〕
  
 ├ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
  
 └────
-
 ┌〔 DEVOTE 〕
  
 ├ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
  
 └────
-
 *${prefix}hapusvote* - to delete votes`
             let buttonsDevote = [
               {buttonId: `${prefix}upvote`, buttonText: {displayText: '👍🏻Up-Vote👍🏻'}, type: 1},
@@ -1043,26 +1017,20 @@ case 'cekvote':
 if (!m.isGroup) throw mess.group
 if (!(m.chat in vote)) throw `_*no voting in this group!*_\n\n*${prefix}vote* - to start voting`
 teks_vote = `*「 VOTE 」*
-
 *Reason:* ${vote[m.chat][0]}
-
 ┌〔 UPVOTE 〕
  
 ├ Total: ${upvote.length}
 ${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
  
 └────
-
 ┌〔 DEVOTE 〕
  
 ├ Total: ${devote.length}
 ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
  
 └────
-
 *${prefix}hapusvote* - to delete votes
-
-
 ©${NexusNwInc.user.id}
 `
 NexusNwInc.sendTextWithMentions(m.chat, teks_vote, m)
@@ -1987,7 +1955,6 @@ To download media, please click one of the buttons below or enter the ytmp3/ytmp
 		NexusNwInc.sendMessage(m.chat, {document: {url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.xlsx'}, mimetype: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', fileName: 'juz-amma-arab-latin-indonesia.xlsx'}, {quoted:m})
 		} else {
 		reply(`What format do you want? ? Example : ${prefix + command} pdf
-
 Available formats : pdf, docx, pptx, xlsx`)
 		}
 		}
@@ -1996,7 +1963,6 @@ Available formats : pdf, docx, pptx, xlsx`)
 		if (!args[0]) throw `Example:
 ${prefix + command} bukhari 1
 ${prefix + command} abu-daud 1
-
 Options available:
 abu-daud
 1 - 4590
@@ -2019,9 +1985,7 @@ muslim
 		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/json/hadith/${args[0]}`)
 		let { number, arab, id } = res.find(v => v.number == args[1])
 		reply(`No. ${number}
-
 ${arab}
-
 ${id}`)
 		} catch (e) {
 		reply(`Hadith not found !`)
@@ -2035,7 +1999,6 @@ ${id}`)
 		let txt = `*Arab* : ${res.result.data.text.arab}
 *English* : ${res.result.data.translation.en}
 *Indonesia* : ${res.result.data.translation.id}
-
 ( Q.S ${res.result.data.surah.name.transliteration.id} : ${res.result.data.number.inSurah} )`
 		reply(txt)
 		NexusNwInc.sendMessage(m.chat, {audio: { url: res.result.data.audio.primary }, mimetype: 'audio/mpeg'}, { quoted : m })
@@ -2046,11 +2009,8 @@ ${id}`)
 		if (!args[1]) throw `Example:\n${prefix + command} 1 2\n\nthen the result is the interpretation of Surah Al-Fatihah verse 2`
 		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
 		let txt = `「 *Tafsir Surah*  」
-
 *Short* : ${res.result.data.tafsir.id.short}
-
 *Long* : ${res.result.data.tafsir.id.long}
-
 ( Q.S ${res.result.data.surah.name.transliteration.id} : ${res.result.data.number.inSurah} )`
 		reply(txt)
 		}
@@ -2142,7 +2102,6 @@ ${Object.entries(global.db.sticker).map(([key, value], index) => `${index + 1}. 
 reply(`Successfully added message in message list as '${text}'
     
 Access with ${prefix}getmsg ${text}
-
 View list of message with ${prefix}listmsg`)
             }
             break
@@ -2351,13 +2310,10 @@ case 'sendkontak': case 'sendcontact': {
                 oldd = performance.now()
                 respon = `
 Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
-
 Info Server
 RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-
 NodeJS Memory Usaage
 ${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
-
 ${cpus[0] ? `_Total CPU Usage_
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
 _CPU Core(s) Usage (${cpus.length} Core CPU)_
@@ -2381,23 +2337,23 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                     break 
 case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'cheems': case 'asta':{
                 anu = `Hi ${pushname}
-Asta With You Forever!! 👻🤚`
+AXLINESID_BOT With You Forever!! 👻🤚`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'Script🔖',
-                                    url: 'https://github.com/Koleksibot/Whitehatbot-md'
+                                displayText: 'Hire Me🔖',
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2498,10 +2454,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
                             hydratedFooterText: `Ohayo🤚 ${pushname}
 How Are You? 😊
-
-
 ❏「 INFO BOT 」
-
 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botnma}
@@ -2509,8 +2462,6 @@ How Are You? 😊
 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-
-
 Please Select Button Below
 `,
                             hydratedButtons: [{
