@@ -2,7 +2,7 @@
 
 //
 //
-//                      𝙰𝚜𝚝𝚊 𝚋𝚢 𝚗𝚎𝚡𝚞𝚜𝚗𝚠
+//                      AXLINESID_BOT
 //
 //                     𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙-𝙼𝙳 𝙱𝚘𝚝
 //
@@ -28,8 +28,8 @@ global.premium = ['6281253962143'] //premium number
 global.pengguna = 'AXLINESID_BOT' //username
 global.botnma = 'SXTCP-ID_botWA' //bot name
 global.ownernma = '@Dora_Emon27' //owner name
-global.packname = 'Koleksibot' //sticker package name
-global.author = 'By Koleksibot' //sticker author name
+global.packname = 'AXLINESID_BOT' //sticker package name
+global.author = 'By AXLINESID_BOT' //sticker author name
 global.sessionName = 'session' //session name
 global.prefa = ['#','!','/',''] //prefix
 global.sp = '⭔' //design
