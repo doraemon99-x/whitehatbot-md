@@ -98,11 +98,11 @@ return dDisplay + hDisplay + mDisplay + sDisplay;
 	
 //[target]\\
 	const reply = (teks) => {
-            NexusNwInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/astapic.jpg`),"sourceUrl": "https://chat.whatsapp.com/FZSGo0P9zkH7FaDfEKAetP"}}}, { quoted: m})
+            NexusNwInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Hire Me`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/astapic.jpg`),"sourceUrl": "https://axlinesid.com/"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            NexusNwInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Subscribe Bot's Official YT Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/astapic.jpg`),"sourceUrl": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjWpvf5rrv3AhXjg_0HHWI0CJQQFnoECAUQAQ&url=https%3A%2F%2Fwww.youtube.com%2Fc%2FGAMINGDUDES_GD&usg=AOvVaw2Brz3_9EIOrhpC9fOABdP4"}}}, { quoted: m})
+            NexusNwInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Hire Me`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/astapic.jpg`),"sourceUrl": "https://axlinesid.com/"}}}, { quoted: m})
         }
 try {
             let isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -581,7 +581,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             }
             break
             case 'sc': case 'script': {
-                reply('Script : https://github.com/Koleksibot/Whitehatbot-md\n Dont Forget To Give Star\n\nYoutube : https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ\n Dont Forget To Subscribe')
+                reply('Script : https://axlinesid.com//Whitehatbot-md\n Dont Forget To Give Star\n\nYoutube : https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ\n Dont Forget To Subscribe')
             }
             break
             case 'chat': {
@@ -1176,7 +1176,7 @@ case 'antilink':
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot/Whitehatbot-md'
+                                    url: 'https://axlinesid.com//Whitehatbot-md'
                                 }
                             }, {
                                 callButton: {
@@ -1216,7 +1216,7 @@ case 'antilink':
 		    let btn = [{
                                 urlButton: {
                                     displayText: 'Script🔖',
-                                    url: 'https://github.com/Koleksibot/Whitehatbot-md'
+                                    url: 'https://axlinesid.com//Whitehatbot-md'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2467,12 +2467,12 @@ Please Select Button Below
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                             	urlButton: {
                                 displayText: 'Script🔖',
-                                    url: 'https://github.com/Koleksibot/Whitehatbot-md'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2502,7 +2502,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     title: `Konichiwa  ${pushname}`,
                     description: `Please Choose The Menu\n\n`,
                     buttonText: "Menu",
-                    footerText: "_Koleksibot_",
+                    footerText: "_AXLINESID_BOT_",
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Group Features",
@@ -2633,11 +2633,11 @@ case 'grupmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2675,11 +2675,11 @@ case 'downloadmenu': {
                             hydratedContentText: okemenu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2712,11 +2712,11 @@ case 'downloadmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2743,11 +2743,11 @@ case 'randommenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2775,11 +2775,11 @@ case 'funmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2815,11 +2815,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2849,11 +2849,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2907,11 +2907,11 @@ case 'horoscopemenukcodk': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2945,11 +2945,11 @@ case 'convertmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2985,11 +2985,11 @@ case 'nocategorymenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3022,11 +3022,11 @@ case 'databasemenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3054,11 +3054,11 @@ case 'anonymouschatmenu': {
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3086,11 +3086,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile 📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3123,11 +3123,11 @@ break
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'profile📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3264,11 +3264,11 @@ break
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Koleksibot`,
+                            hydratedFooterText: `AXLINESID_BOT`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'profile📍',
-                                    url: 'https://github.com/Koleksibot'
+                                    url: 'https://axlinesid.com/'
                                 }
                             }, {
                                 quickReplyButton: {
