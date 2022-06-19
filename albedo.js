@@ -1409,7 +1409,7 @@ case 'antilink':
 	    if (!/image/.test(mime)) throw `Send/Reply Image With Caption ${prefix + command}`
 	    if (/webp/.test(mime)) throw `Send/Reply Image With Caption ${prefix + command}`
 	    let remobg = require('remove.bg')
-	    let apirnobg = ['9yYVW6tYHkw1rd4zYY9493Lv','Yp1vvJ4b27ymbDrmm43apVdc','zgt8hhnBkqeKvUHbst1YSzcm','aT7ibfUsGSwFyjaPZ9eoJc61','BY63t7Vx2tS68YZFY6AJ4HHF','5Gdq1sSWSeyZzPMHqz7ENfi8','86h6d6u4AXrst4BVMD9dzdGZ','xp8pSDavAgfE5XScqXo9UKHF','dWbCoCb3TacCP93imNEcPxcL']
+	    let apirnobg = ['9yYVW6tYHkw1rd4zYY9493Lv','Yp1vvJ4b27ymbDrmm43apVdc','zgt8hhnBkqeKvUHbst1YSzcm']
 	    let apinobg = apirnobg[Math.floor(Math.random() * apirnobg.length)]
 	    hmm = await './src/remobg-'+getRandom('')
 	    localFile = await NexusNwInc.downloadAndSaveMediaMessage(quoted, hmm)
