@@ -1750,6 +1750,12 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 let anu = await primbon.shio(text)
                 if (anu.status == false) return reply(anu.message)
                 NexusNwInc.sendText(m.chat, `⭔ *Results :* ${anu.message}`, m)
+	    }
+	    break
+	        case 'tiktok': case 'tikporn': {
+                if (!text) throw 'Enter Query Link!'
+                replay(mess.wait)
+                let anu = await fetchJson(api('zenz', '/downloader/tikporn', 'apikey'))
             }
             break
 	        case 'tiktok': case 'tiktoknowm': {
