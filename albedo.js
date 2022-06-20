@@ -32,27 +32,31 @@ let nex = fs.readFileSync('./Media/astapic.jpg')
 const antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 
 //[database reader]\\
-global.db = JSON.parse(fs.readFileSync('./src/database.json'))
+global.config = JSON.parse(fs.readFileSync('./config.json'))
+global.db = JSON.parse(fs.readFileSync("./database/db.json"))
 if (global.db) global.db = {
     sticker: {},
     database: {},
-    game: {},
-    others: {},
-    users: {},
     chats: {},
+    game: {},
     ...(global.db || {})
 }
-let tebaklagu = db.game.tebaklagu = []
-let _family100 = db.game.family100 = []
-let kuismath = db.game.math = []
-let tebakgambar = db.game.tebakgambar = []
-let tebakkata = db.game.tebakkata = []
-let caklontong = db.game.lontong = []
-let caklontong_desk = db.game.lontong_desk = []
-let tebakkalimat = db.game.kalimat = []
-let tebaklirik = db.game.lirik = []
-let tebaktebakan = db.game.tebakan = []
-let vote = db.others.vote = []
+
+// Entertainment
+global.siapakah = db.game.siapakah = {}
+global.caklontong = db.game.caklontong = {}
+global.family100 = db.game.family100 = {}
+global.tebakkalimat = db.game.tebakkalimat = {}
+global.tebakkata = db.game.tebakkata = {}
+global.asahotak = db.game.asahotak = {}
+global.susunkata = db.game.susunkata = {}
+global.tebakbendera = db.game.tebakbendera = {}
+global.tebakgambar = db.game.tebakgambar = {}
+global.tebakkabupaten = db.game.tebakkabupaten = {}
+global.tebaklagu = db.game.tebaklagu = {}
+global.tekateki = db.game.tekateki = {}
+global.tebaklirik = db.game.tebaklirik = {}
+global.tebaktebakan = db.game.tebaktebakan = {}
 	
 module.exports = NexusNwInc = async (NexusNwInc, m, chatUpdate, store) => {
     try {
